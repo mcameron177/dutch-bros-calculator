@@ -1,0 +1,86 @@
+<!-- ✅ FULL LATTE NUTRITION CALCULATOR -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dutch Bros Latte Nutrition Calculator</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: auto; }
+    label { display: block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Dutch Bros Latte Nutrition Calculator</h1>
+
+  <label>Drink Type:
+    <select id="drinkTypeDropdown">
+      <option value="hot">Hot</option>
+      <option value="iced">Iced</option>
+    </select>
+  </label>
+
+  <label>Size:
+    <select id="sizeDropdown">
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select>
+  </label>
+
+  <label>Ice Level:
+    <select id="iceLevelDropdown">
+      <option value="regular">Regular Ice</option>
+      <option value="lite">Lite Ice</option>
+      <option value="none">No Ice</option>
+    </select>
+  </label>
+
+  <label>Sweetness:
+    <select id="sweetnessDropdown">
+      <option value="half">Half Sweet</option>
+      <option value="regular">Regular Sweet</option>
+      <option value="extra">Extra Sweet</option>
+    </select>
+  </label>
+
+  <label>Extra Shots:
+    <select id="extraShotsDropdown">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+  </label>
+
+  <label>Milk Type:
+    <select id="milkTypeDropdown">
+      <option value="breve">Breve</option>
+      <option value="whole">Whole Milk</option>
+      <option value="2%">2% Milk</option>
+      <option value="nonfat">Nonfat Milk</option>
+      <option value="chocolate">Chocolate Milk</option>
+      <option value="protein">Protein Milk</option>
+      <option value="oat">Oatmilk</option>
+      <option value="almond">Almond Milk</option>
+      <option value="coconut">Coconut Milk</option>
+    </select>
+  </label>
+
+  <label>Syrups/Sauces (select up to 4):</label>
+  <div id="syrupCheckboxes"></div>
+
+  <label>Drizzles:</label>
+  <div id="drizzleCheckboxes"></div>
+
+  <label>Toppings/Mix-ins:</label>
+  <div id="toppingCheckboxes"></div>
+
+  <button onclick="calculate()">Calculate</button>
+  <pre id="resultText">Nutrition info will appear here</pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
